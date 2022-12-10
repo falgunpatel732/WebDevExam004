@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Playground</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="mainsss">
+    <section class="header">
+        <div>
+            <ul class="navbar">
+                <a href="#"><i class="fa-solid fa-horse-head navi"></i></a>
+                <h2 class="fw-bold" style="margin: auto;
+                font-size: 3rem;">Milao</h2>
+            </ul>
+        </div>
+        <div>
+            <ul class="navbar">
+                <li><a class="active" href="index.html">Search Naukari</a></li>
+                <li><a href="#">Company Review</a></li>
+                <li><a href="#">Find salaries</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="navbar">
+                <a href="#"><i class="fa-solid fa-moon navi"></i></a>
+                <a href="#"><i class="fa-brands fa-android navi"></i></a>
+                <h1 class="fw-bold">|</h1>
+                <a href="#"><i class="fa-solid fa-user navi"></i></a>
+                <h3 style="margin: auto;
+                font-size: 3rem;" class="fw-bold">User</h3>
+            </ul>
+        </div>
+    </section>
+
+
+    <div class="search-menu">
+        <div class="search-bar">
+         <input type="text" class="search-box" autofocus />
+         <div class="search item">Product Designer
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+           <path d="M18 6L6 18M6 6l12 12" /></svg>
+         </div>
+         <div class="search item">UI Designer
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+           <path d="M18 6L6 18M6 6l12 12" /></svg>
+         </div>
+        </div>
+        <div class="search-location">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+          <circle cx="12" cy="10" r="3" />
+         </svg>
+         Londontowne, MD
+        </div>
+        <div class="search-job">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+          <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" /></svg>
+         <input type="text" placeholder="Job Type">
+        </div>
+        <div class="search-salary">
+         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="currentColor" stroke-width=".4">
+          <path d="M12.6 18H9.8a.8.8 0 010-1.5h2.8a.9.9 0 000-1.8h-1.2a2.4 2.4 0 010-4.7h2.8a.8.8 0 010 1.5h-2.8a.9.9 0 000 1.8h1.2a2.4 2.4 0 010 4.7z" stroke="currentColor" />
+          <path d="M12 20a.8.8 0 01-.8-.8v-2a.8.8 0 011.6 0v2c0 .5-.4.8-.8.8zM12 11.5a.8.8 0 01-.8-.8v-2a.8.8 0 011.6 0v2c0 .5-.4.8-.8.8z" stroke="currentColor" />
+          <path d="M21.3 23H2.6A2.8 2.8 0 010 20.2V3.9C0 2.1 1.2 1 2.8 1h18.4C22.9 1 24 2.2 24 3.8v16.4c0 1.6-1.2 2.8-2.8 2.8zM2.6 2.5c-.6 0-1.2.6-1.2 1.3v16.4c0 .7.6 1.3 1.3 1.3h18.4c.7 0 1.3-.6 1.3-1.3V3.9c0-.7-.6-1.3-1.3-1.3z" stroke="currentColor" />
+          <path d="M23.3 6H.6a.8.8 0 010-1.5h22.6a.8.8 0 010 1.5z" stroke="currentColor" /></svg>
+         <input type="text" placeholder="Salary Range">
+        </div>
+        <button class="search-button">Find Job</button>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="side-nav">
+                <div class="card" style="background-color: #d1d1e1;">
+                    <div class="card-body">
+                    <h5 class="card-title">Create Job Alert</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Create a job alert now and never miss a job</h6>
+                    <input type="email" class="form-control col-sm-4 col-md-3" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <button type="button" class="btn btn-primary" style="margin: 10px 0px;
+                    ">Create Job Alerts</button>
+                    </div>
+                </div>
+                <p class="fs-6 fw-bold"  style="margin: 10px 0px;">Type of Employment</p>
+                <div style="width: 18rem;">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault0" checked />
+                        <label class="form-check-label" for="flexCheckDefault">Full Time Jobs <span style="color: gray;" class="badge  badge-light">56</span> </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1" />
+                        <label class="form-check-label" for="flexCheckDefault">Part Time Jobs <span style="color: gray;" class="badge  badge-light">46</span> </label></label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" />
+                        <label class="form-check-label" for="flexCheckDefault">Remote Jobs <span style="color: gray;" class="badge  badge-light">24</span> </label></label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" />
+                        <label class="form-check-label" for="flexCheckDefault">Internship Jobs
+                            <span style="color: gray;" class="badge  badge-light">27</span> </label>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4" />
+                        <label class="form-check-label" for="flexCheckDefault">Contract
+                            <span style="color: gray;" class="badge  badge-light">76</span> </label>
+                        </label>
+                    </div>
+                    <div class="form-check"> 
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5" />
+                        <label class="form-check-label" for="flexCheckDefault">Training Jobs
+                            <span style="color: gray;" class="badge  badge-light">28</span> </label>
+                        </label>
+                    </div>
+                </div>
+        
+                <p class="fs-6 fw-bold"  style="margin: 10px 0px;">Security Level</p>
+                <div style="width: 18rem;">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6" checked />
+                        <label class="form-check-label" for="flexCheckDefault">Student Level
+                            <span style="color: gray;" class="badge  badge-light">98</span> </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault7" />
+                        <label class="form-check-label" for="flexCheckDefault">Entry Level
+                            <span style="color: gray;" class="badge  badge-light">44</span> </label>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault8" checked />
+                        <label class="form-check-label" for="flexCheckDefault">Mid Level
+                            <span style="color: gray;" class="badge  badge-light">35</span> </label>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault9" checked />
+                        <label class="form-check-label" for="flexCheckDefault">Senior Level 
+                            <span style="color: gray;" class="badge  badge-light">29</span> </label>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10" />
+                        <label class="form-check-label" for="flexCheckDefault">Directors
+                            <span style="color: gray;" class="badge  badge-light">30</span> </label>
+                        </label>
+                    </div>
+                    <div class="form-check"> 
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault11" />
+                        <label class="form-check-label" for="flexCheckDefault">VP or Above
+                            <span style="color: gray;" class="badge  badge-light">56</span> </label>
+                        </label>
+                    </div>
+                </div>
+                <p class="fs-6 fw-bold"  style="margin: 10px 0px;">Salary Range</p>
+                <div style="width: 18rem;">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault12" checked />
+                        <label class="form-check-label" for="flexCheckDefault">$700-$1000<span style="color: gray;" class="badge  badge-light">49</span> </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13" />
+                        <label class="form-check-label" for="flexCheckDefault">$1000-$1200
+                            <span style="color: gray;" class="badge  badge-light">67</span> </label>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault14" />
+                        <label class="form-check-label" for="flexCheckDefault">$1200-$1400
+                            <span style="color: gray;" class="badge  badge-light">24</span> </label>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault15" />
+                        <label class="form-check-label" for="flexCheckDefault">$1500-$1800
+        
+                            <span style="color: gray;" class="badge  badge-light">27</span> </label>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault16" checked />
+                        <label class="form-check-label" for="flexCheckDefault">$2000-$3000
+                            <span style="color: gray;" class="badge  badge-light">76</span> </label>
+                        </label>
+                    </div>
+                    <div class="form-check"> 
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault17" checked />
+                        <label class="form-check-label" for="flexCheckDefault">$3000-$4000
+                            <span style="color: gray;" class="badge  badge-light">22</span> </label>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault18" />
+                        <label class="form-check-label" for="flexCheckDefault">$4000-$5000
+                            <span style="color: gray;" class="badge  badge-light">18</span> </label>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9" style="margin-top: 20px;">
+            <div style="margin-bottom: 20px;" class="row">
+                <div class="col">
+                    <a href="" style="color: black;
+                    text-decoration: none;">
+                    <div class="card border-light card-edit">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa-brands fa-facebook-square fa-3x icon"></i>
+                            </div>
+                            <div class="col" style="text-align: right;"><i class="fa-solid fa-ellipsis"></i></div>
+                        </div>
+                        <div class="card-title">
+                            <h6 class=".card-heading">UI/UX Designer</h6>
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui unde rerum dicta, possimus quidem aliquid dignissimos temporibus.</p>
+                        </div>
+                        <div class="row gx-0" style="margin-bottom: 7%">
+                            <div class="col">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y:.25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Full time</button>
+                            </div>
+                            <div class="col gx-0">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Min. 1 year</button>
+                            </div>
+                            <div class="col">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Senior Level</button>
+                            </div>
+                        </div>
+
+                        <div class="row gx-0">
+                            <div class="col">
+                                <button href="#" class="btn btn-primary btn-sm">Apply Now</button>
+                            </div>
+                            <div class="col">
+                                <button href="#" class="mb-2 btn btn-light btn-sm">Messages</button>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    </a>
+                </div>
+                
+                <div class="col">
+                    <a href="" style="color: black;
+                    text-decoration: none;">
+                    <div class="card border-light card-edit">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa-brands fa-instagram-square fa-3x icon"></i>
+                            </div>
+                            <div class="col" style="text-align: right;"><i class="fa-solid fa-ellipsis"></i></div>
+                        </div>
+                        <div class="card-title">
+                            <h6 class=".card-heading">Sr.Product Designer</h6>
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui unde rerum dicta, possimus quidem aliquid dignissimos temporibus.</p>
+                        </div>
+                        <div class="row gx-0" style="margin-bottom: 7%">
+                            <div class="col">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y:.25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Full time</button>
+                            </div>
+                            <div class="col gx-0">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Min. 1 year</button>
+                            </div>
+                            <div class="col">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Senior Level</button>
+                            </div>
+                        </div>
+
+                        <div class="row gx-0">
+                            <div class="col">
+                                <button href="#" class="btn btn-primary btn-sm">Apply Now</button>
+                            </div>
+                            <div class="col">
+                                <button href="#" class="mb-2 btn btn-light btn-sm">Messages</button>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="" style="color: black;
+                    text-decoration: none;">
+                    <div class="card border-light card-edit">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa-brands fa-twitter-square fa-3x icon"></i>
+                            </div>
+                            <div class="col" style="text-align: right;"><i class="fa-solid fa-ellipsis"></i></div>
+                        </div>
+                        <div class="card-title">
+                            <h6 class=".card-heading">User Experience Designer</h6>
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui unde rerum dicta, possimus quidem aliquid dignissimos temporibus.</p>
+                        </div>
+                        <div class="row gx-0" style="margin-bottom: 7%">
+                            <div class="col">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y:.25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Full time</button>
+                            </div>
+                            <div class="col gx-0">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Min. 1 year</button>
+                            </div>
+                            <div class="col">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Senior Level</button>
+                            </div>
+                        </div>
+
+                        <div class="row gx-0">
+                            <div class="col">
+                                <button href="#" class="btn btn-primary btn-sm">Apply Now</button>
+                            </div>
+                            <div class="col">
+                                <button href="#" class="mb-2 btn btn-light btn-sm">Messages</button>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div style="margin-bottom: 20px;" class="row">
+                
+                <div class="col">
+                    <a href="" style="color: black;
+                    text-decoration: none;">
+                    <div class="card border-light card-edit">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa-brands fa-google fa-3x icon"></i>
+                            </div>
+                            <div class="col" style="text-align: right;"><i class="fa-solid fa-ellipsis"></i></div>
+                        </div>
+                        <div class="card-title">
+                            <h6 class=".card-heading">Product Designer</h6>
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui unde rerum dicta, possimus quidem aliquid dignissimos temporibus.</p>
+                        </div>
+                        <div class="row gx-0" style="margin-bottom: 7%">
+                            <div class="col">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y:.25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Full time</button>
+                            </div>
+                            <div class="col gx-0">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Min. 1 year</button>
+                            </div>
+                            <div class="col">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Senior Level</button>
+                            </div>
+                        </div>
+
+                        <div class="row gx-0">
+                            <div class="col">
+                                <button href="#" class="btn btn-primary btn-sm">Apply Now</button>
+                            </div>
+                            <div class="col">
+                                <button href="#" class="mb-2 btn btn-light btn-sm">Messages</button>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    </a>
+                </div>
+                
+                <div class="col">
+                    <a href="" style="color: black;
+                    text-decoration: none;">
+                    <div class="card border-light card-edit">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa-brands fa-telegram fa-3x icon"></i>
+                            </div>
+                            <div class="col" style="text-align: right;"><i class="fa-solid fa-ellipsis"></i></div>
+                        </div>
+                        <div class="card-title">
+                            <h6 class=".card-heading">UI/UX Designer</h6>
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui unde rerum dicta, possimus quidem aliquid dignissimos temporibus.</p>
+                        </div>
+                        <div class="row gx-0" style="margin-bottom: 7%">
+                            <div class="col">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y:.25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Full time</button>
+                            </div>
+                            <div class="col gx-0">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Min. 1 year</button>
+                            </div>
+                            <div class="col">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Senior Level</button>
+                            </div>
+                        </div>
+
+                        <div class="row gx-0">
+                            <div class="col">
+                                <button href="#" class="btn btn-primary btn-sm">Apply Now</button>
+                            </div>
+                            <div class="col">
+                                <button href="#" class="mb-2 btn btn-light btn-sm">Messages</button>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="" style="color: black;
+                    text-decoration: none;">
+                    <div class="card border-light card-edit">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa-brands fa-whatsapp-square fa-3x icon"></i>
+                            </div>
+                            <div class="col" style="text-align: right;"><i class="fa-solid fa-ellipsis"></i></div>
+                        </div>
+                        <div class="card-title">
+                            <h6 class=".card-heading">UI Designer</h6>
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui unde rerum dicta, possimus quidem aliquid dignissimos temporibus.</p>
+                        </div>
+                        <div class="row gx-0" style="margin-bottom: 7%">
+                            <div class="col">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y:.25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Full time</button>
+                            </div>
+                            <div class="col gx-0">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Min. 1 year</button>
+                            </div>
+                            <div class="col">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Senior Level</button>
+                            </div>
+                        </div>
+
+                        <div class="row gx-0">
+                            <div class="col">
+                                <button href="#" class="btn btn-primary btn-sm">Apply Now</button>
+                            </div>
+                            <div class="col">
+                                <button href="#" class="mb-2 btn btn-light btn-sm">Messages</button>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div style="margin-bottom: 20px;" class="row">
+                <div class="col">
+                    <a href="" style="color: black;
+                    text-decoration: none;">
+                    <div class="card border-light card-edit">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa-brands fa-youtube-square fa-3x icon"></i>
+                            </div>
+                            <div class="col" style="text-align: right;"><i class="fa-solid fa-ellipsis"></i></div>
+                        </div>
+                        <div class="card-title">
+                            <h6 class=".card-heading">User Experience Designer</h6>
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui unde rerum dicta, possimus quidem aliquid dignissimos temporibus.</p>
+                        </div>
+                        <div class="row gx-0" style="margin-bottom: 7%">
+                            <div class="col">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y:.25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Full time</button>
+                            </div>
+                            <div class="col gx-0">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Min. 1 year</button>
+                            </div>
+                            <div class="col">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Senior Level</button>
+                            </div>
+                        </div>
+
+                        <div class="row gx-0">
+                            <div class="col">
+                                <button href="#" class="btn btn-primary btn-sm">Apply Now</button>
+                            </div>
+                            <div class="col">
+                                <button href="#" class="mb-2 btn btn-light btn-sm">Messages</button>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    </a>
+                </div>
+                
+                <div class="col">
+                    <a href="" style="color: black;
+                    text-decoration: none;">
+                    <div class="card border-light card-edit">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa-brands fa-discord fa-3x icon"></i>
+                            </div>
+                            <div class="col" style="text-align: right;"><i class="fa-solid fa-ellipsis"></i></div>
+                        </div>
+                        <div class="card-title">
+                            <h6 class=".card-heading">UX Designer</h6>
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui unde rerum dicta, possimus quidem aliquid dignissimos temporibus.</p>
+                        </div>
+                        <div class="row gx-0" style="margin-bottom: 7%">
+                            <div class="col">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y:.25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Full time</button>
+                            </div>
+                            <div class="col gx-0">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Min. 1 year</button>
+                            </div>
+                            <div class="col">
+                                <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Senior Level</button>
+                            </div>
+                        </div>
+
+                        <div class="row gx-0">
+                            <div class="col">
+                                <button href="#" class="btn btn-primary btn-sm">Apply Now</button>
+                            </div>
+                            <div class="col">
+                                <button href="#" class="mb-2 btn btn-light btn-sm">Messages</button>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="" style="color: black;
+                    text-decoration: none;">
+                        <div class="card border-light card-edit">
+                            <div class="row">
+                                <div class="col">
+                                    <i class="fa-brands fa-apple fa-3x icon"></i>
+                                </div>
+                                <div class="col" style="text-align: right;"><i class="fa-solid fa-ellipsis"></i></div>
+                            </div>
+                            <div class="card-title">
+                                <h6 class=".card-heading">UI/UX Designer</h6>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui unde rerum dicta, possimus quidem aliquid dignissimos temporibus.</p>
+                            </div>
+                            <div class="row gx-0" style="margin-bottom: 7%">
+                                <div class="col">
+                                    <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y:.25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Full time</button>
+                                </div>
+                                <div class="col gx-0">
+                                    <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Min. 1 year</button>
+                                </div>
+                                <div class="col">
+                                    <button href="#" class="btn btn-light btn-xs" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .5rem;" disabled>Senior Level</button>
+                                </div>
+                            </div>
+    
+                            <div class="row gx-0">
+                                <div class="col">
+                                    <button href="#" class="btn btn-primary btn-sm">Apply Now</button>
+                                </div>
+                                <div class="col">
+                                    <button href="#" class="mb-2 btn btn-light btn-sm">Messages</button>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+    
+        <script src="https://kit.fontawesome.com/ab6efbdd2b.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
